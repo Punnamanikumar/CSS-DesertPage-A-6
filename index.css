@@ -30,6 +30,13 @@
             text-align: justify;
         }
         
+        .cam {
+            zoom: 30%;
+            position: absolute;
+            margin-left: 10%;
+            margin-top: 7%;
+        }
+        
         #lh {
             font-size: 4em;
             zoom: 150%;
@@ -45,14 +52,20 @@
             gap: 40px;
             position: absolute;
             top: 100px;
-            right: 70px;
+            right: 140px;
         }
         
         .i {
             height: 450px;
             width: 400px;
-            zoom: 50%;
+            zoom: 60%;
             border-radius: 15px;
+            transition: all 0.2s linear;
+            cursor: pointer;
+        }
+        
+        .i:hover {
+            transform: translateY(-30px);
         }
         
         .i1 {
@@ -69,4 +82,90 @@
         
         .i4 {
             background-image: url("./image/pic-4.png");
+        }
+        
+        .text {
+            color: white;
+            font-size: xx-large;
+        }
+        
+        button {
+            padding: 10px;
+            width: 184px;
+            height: 46px;
+            background: white;
+            border: none;
+            border-radius: 23px;
+            font-size: 14px;
+            margin-top: 18px;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        @media screen and (min-width:360px) and (max-width:560px) {
+            body {
+                zoom: 100%;
+                overflow-x: hidden;
+            }
+            .f1 {
+                position: absolute;
+                top: 65%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+                left: 40%;
+            }
+            .cam {
+                zoom: 20%;
+            }
+            .flex {
+                display: grid;
+                margin-right: -280px;
+            }
+            .sah {
+                font-size: xx-small;
+                margin-top: -140px;
+            }
+            p {
+                font-size: large;
+                text-align: justify;
+            }
+        }
+        
+        @media screen and (min-width:562px) and (max-width:856px) {
+            body {
+                zoom: 70%;
+                overflow-x: hidden;
+            }
+            .f1 {
+                position: absolute;
+                top: 65%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+                left: 40%;
+            }
+            .cam {
+                zoom: 20%;
+            }
+            .sah {
+                font-size: xx-small;
+                margin-top: -140px;
+            }
+            p {
+                font-size: large;
+                text-align: justify;
+            }
+            .i {
+                width: 1000px;
+                height: 500px;
+                margin-left: -380px;
+                background-size: cover;
+            }
         }
